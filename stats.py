@@ -18,3 +18,15 @@ def get_character_count(text):
             character_count[character] += 1
 
     return character_count
+
+def clean_dictionary(character_count):
+    sorted_list = list()
+
+    sorted_character_count = dict(sorted(character_count.items(), key = lambda item: item[1], reverse = True))
+    for key, value in sorted_character_count.items():
+            dictionary = {}
+            dictionary["char"] = key
+            dictionary["num"] = value
+            sorted_list.append(dictionary)
+    
+    return sorted_list
