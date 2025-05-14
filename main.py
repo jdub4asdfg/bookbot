@@ -25,8 +25,12 @@ def main():
     print("-----Character Counts-----")
     
     for dictionary in sorted_list:
-        if dictionary["char"] == "\n" or dictionary["char"] == " ":
+        if dictionary["char"] == "\n":
             continue
+        elif dictionary["char"] == " ":
+            print(f"<space>: {dictionary['num']}")
+            continue
+
         print(f"{dictionary['char']}: {dictionary['num']}")
 
 def get_book_text(file_path):
