@@ -1,9 +1,14 @@
 from stats import get_word_count
 from stats import get_character_count
 from stats import clean_dictionary
+import sys
 
 def main():
-    file_path = "/home/jdubs/projects/github/bookbot/books/frankenstein.txt"
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
 
     text = get_book_text(file_path)
 
@@ -16,7 +21,7 @@ def main():
     print("=====BOOKBOT=====")
     print(f"After analysing the book found at {file_path}\n")
     print("-----Word Count-----")
-    print(f"Found {word_count} total words")
+    print(f"Found {word_count} total words\n")
     print("-----Character Counts-----")
     
     for dictionary in sorted_list:
