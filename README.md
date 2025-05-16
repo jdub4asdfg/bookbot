@@ -11,5 +11,6 @@ BookBot analyses text files stored in the `books` directory and generates a repo
 - Clone the repo
 - Create a `books` directory in the working directory
 - Add whatever text file you want analysed into the `books` directory
-- Enter `python3 main.py <path_to_text_file>` into your CLI while in the working directory. Example:
-`python3 main.py books/frankenstein.txt`
+- Enter `python3 main.py <path_to_text_file>` into your CLI while in the working directory.
+
+Example: `python3 main.py books/frankenstein.txt`
