@@ -1,8 +1,5 @@
 # Bookbot
-
-BookBot is my first Boot.dev project.
-
-This project was done after completing the first 3 courses of the Backend Developer Learning Path, the three courses being Python, Linux and Git.
+Bookbot is one of my very first projects that utilized basic skills in Python, Git and Vim motions.
 
 ## What it does
 BookBot analyses text files stored in the `books` directory and generates a report containing word and character counts.
