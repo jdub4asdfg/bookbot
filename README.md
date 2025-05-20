@@ -1,5 +1,5 @@
 # Bookbot
-Bookbot is one of my very first projects that utilized basic skills in Python, Git and Vim motions.
+Bookbot is one of my very first projects that utilized basic skills in Python, Git and Linux.
 
 ## What it does
 BookBot analyses text files stored in the `books` directory and generates a report containing word and character counts.
