@@ -4,6 +4,7 @@ from stats import get_word_count
 from stats import get_character_count
 from stats import clean_dictionary
 
+
 def main():
     # Checks if user input is correct
     if len(sys.argv) != 2:
@@ -19,14 +20,14 @@ def main():
     character_count = get_character_count(text)
 
     sorted_list = clean_dictionary(character_count)
-    
+
     # Printing the report
     print("=====BOOKBOT=====")
     print(f"After analysing the book found at {file_path}\n")
     print("-----Word Count-----")
     print(f"Found {word_count} total words\n")
     print("-----Character Counts-----")
-    
+
     for dictionary in sorted_list:
         if dictionary["char"] == "\n":
             # Cleaning output for newline characters
@@ -39,10 +40,12 @@ def main():
 
         print(f"{dictionary['char']}: {dictionary['num']}")
 
+
 def get_book_text(file_path):
     with open(file_path) as f:
         file_contents = f.read()
 
     return file_contents
+
 
 main()
